@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/TejaswiniKrishnan/home-project.git/static/css/main.6d8403bf.css",
+    "main.js": "/TejaswiniKrishnan/home-project.git/static/js/main.35b77834.js",
+    "static/js/787.cf4a0e5f.chunk.js": "/TejaswiniKrishnan/home-project.git/static/js/787.cf4a0e5f.chunk.js",
+    "static/media/elect.jpg": "/TejaswiniKrishnan/home-project.git/static/media/elect.542352be0a003dfcc999.jpg",
+    "static/media/care.jpeg": "/TejaswiniKrishnan/home-project.git/static/media/care.074c410b0ef949345b04.jpeg",
+    "static/media/p123.jpg": "/TejaswiniKrishnan/home-project.git/static/media/p123.aeffae47941fa29ead1c.jpg",
+    "static/media/gardener.webp": "/TejaswiniKrishnan/home-project.git/static/media/gardener.7e89b7d1e8d3681326bf.webp",
+    "static/media/carp.jpg": "/TejaswiniKrishnan/home-project.git/static/media/carp.43d519a9c2332219e645.jpg",
+    "static/media/sofa.jpg": "/TejaswiniKrishnan/home-project.git/static/media/sofa.f34ba8dd42b774f31314.jpg",
+    "static/media/clener.jpg": "/TejaswiniKrishnan/home-project.git/static/media/clener.d86e288042fcf5f77f95.jpg",
+    "static/media/pipe.webp": "/TejaswiniKrishnan/home-project.git/static/media/pipe.3009f51fd2b2674ca2a1.webp",
+    "static/media/painter1.jpg": "/TejaswiniKrishnan/home-project.git/static/media/painter1.e8c62f2dd889502bc9ba.jpg",
+    "index.html": "/TejaswiniKrishnan/home-project.git/index.html",
+    "main.6d8403bf.css.map": "/TejaswiniKrishnan/home-project.git/static/css/main.6d8403bf.css.map",
+    "main.35b77834.js.map": "/TejaswiniKrishnan/home-project.git/static/js/main.35b77834.js.map",
+    "787.cf4a0e5f.chunk.js.map": "/TejaswiniKrishnan/home-project.git/static/js/787.cf4a0e5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d8403bf.css",
+    "static/js/main.35b77834.js"
+  ]
+}
