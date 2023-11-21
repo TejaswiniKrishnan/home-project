@@ -8,14 +8,12 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
+
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import SvgIcon from "@mui/material/SvgIcon";
-import { borderRightColor } from "@mui/system";
 
 function HomeIcon(props) {
   return (
@@ -72,10 +70,6 @@ const Navbar = () => {
         ].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
-              {/* <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon> */}
-              {/* Apply fontWeight: 'bold' to make the text bold */}
               <ListItemText
                 style={{
                   color: "darkviolet",

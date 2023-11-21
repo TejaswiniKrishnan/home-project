@@ -1,33 +1,25 @@
 import React from "react";
 import Painter from "./painter1.jpg";
 import Clean from "./clener.jpg";
-import Electrician from "./elect.jpg";
-//import Electric from "./elect1.jpg";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-//import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Carp from "./carp.jpg";
-//import Cook from "./cook.jpg";
 import Gardener from "./gardener.webp";
 import Paint from "./p123.jpg";
-import Sofa from "./sofa.jpg";
 import Pipe from "./pipe.webp";
 import Care from "./care.jpeg";
-import Box from "@mui/material/Box";
-import SvgIcon from "@mui/material/SvgIcon";
-import { borderRightColor } from "@mui/system";
 
 import { TextField } from "@mui/material";
-function HomeIcon(props) {
-  return (
-    <SvgIcon {...props}>
-      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-    </SvgIcon>
-  );
-}
+// function HomeIcon(props) {
+//   return (
+//     <SvgIcon {...props}>
+//       <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+//     </SvgIcon>
+//   );
+// }
 
 const Main = () => {
   return (
@@ -81,6 +73,7 @@ const Main = () => {
             {/* <img src={Electrician} alt="elect" /> */}
             <img
               style={{ width: 380, height: 300 }}
+              alt="g"
               src="https://i.pinimg.com/564x/59/95/c5/5995c50a3b41d113e1705eaf431960bd.jpg"
             ></img>
           </div>
@@ -111,7 +104,7 @@ const Main = () => {
           marginTop: 20,
         }}
       >
-        <center style={{ fontSize: 40 }}>Offers for You</center>
+        <center style={{ fontSize: 40 }}>Take a look</center>
       </div>
       <div className="grid1">
         <br></br>
@@ -131,10 +124,11 @@ const Main = () => {
           <CardContent>
             <ul>
               <li style={{ fontSize: 23, fontWeight: "bold", marginTop: 0 }}>
-                Upto 60% off on Home
+                Want help in cleaning home!!
               </li>
               <li>
                 <img
+                  alt="h"
                   src="https://static.vecteezy.com/system/resources/previews/003/418/487/original/super-maid-and-home-cleaning-equipment-flat-cartoon-character-vector.jpg"
                   className="clean"
                 ></img>
@@ -157,10 +151,11 @@ const Main = () => {
           <CardContent>
             <ul>
               <li style={{ fontSize: 23, fontWeight: "bold", marginTop: 0 }}>
-                upto 30% off on Gardening
+                Can I help you with gardening?
               </li>
               <li>
                 <img
+                  alt="gm"
                   src="https://media.istockphoto.com/id/1369215974/vector/man-planting-a-tree-in-garden.jpg?s=612x612&w=0&k=20&c=Iv6WaOsK7IaSM5Dg3mtwTO05LIgIrt1MjquTJPZ0I7U="
                   className="clean"
                 ></img>
@@ -179,15 +174,15 @@ const Main = () => {
           }}
           className="card"
         >
-          {/* <img src={Painter} alt="painter1" className="pics" /> */}
           <CardContent>
             <ul>
               <li style={{ fontSize: 23, fontWeight: "bold", marginTop: 0 }}>
-                Flat 25% off on Home Painting
+                Need a colourful Home?
               </li>
               <li>
                 <img
                   src="https://t3.ftcdn.net/jpg/02/25/52/30/360_F_225523060_yxyEKjRsBgxm8HPBvxkAWBceF2iIzFYo.jpg"
+                  alt=""
                   className="clean"
                 ></img>
               </li>
@@ -219,6 +214,7 @@ const Main = () => {
                 <li>
                   <img
                     src="https://st.hzcdn.com/static_en-IN/homepage/visitorhp_icon_photos%402x.png"
+                    alt="gj"
                     className="ex"
                   ></img>
                 </li>
@@ -243,6 +239,7 @@ const Main = () => {
               <ul>
                 <li>
                   <img
+                    alt="g"
                     src="https://st.hzcdn.com/static_en-IN/homepage/visitorhp_icon_professionals%402x.png"
                     className="ex"
                   ></img>
@@ -268,6 +265,7 @@ const Main = () => {
               <ul>
                 <li>
                   <img
+                    alt="g"
                     src="https://st.hzcdn.com/static_en-IN/homepage/visitorhp_icon_pro_match%402x.png"
                     className="ex"
                   ></img>
@@ -386,30 +384,35 @@ const Main = () => {
             <li>
               <img
                 className="foot"
+                alt="g"
                 src="https://fundrazr.com/wp-content/uploads/2019/12/fb.jpg"
               ></img>
             </li>
             <li>
               <img
                 className="foot"
+                alt="g"
                 src="https://fundrazr.com/wp-content/uploads/2019/12/inst64.png"
               ></img>
             </li>
             <li>
               <img
                 className="foot"
+                alt="g"
                 src="https://fundrazr.com/wp-content/uploads/2019/12/tw.jpg"
               ></img>
             </li>
             <li>
               <img
                 className="foot"
+                alt="g"
                 src="https://fundrazr.com/wp-content/uploads/2019/12/li.jpg"
               ></img>
             </li>
             <li>
               <img
                 className="foot"
+                alt="g"
                 src="https://fundrazr.com/wp-content/uploads/2019/12/yt.jpg"
               ></img>
             </li>
