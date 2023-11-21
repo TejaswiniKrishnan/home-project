@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 .middle{
-  color: rgb(34, 28, 71);
+  color: rgb(29, 24, 62);
   background-color: white;
   height: 300px;
 }
@@ -54,9 +54,10 @@ img{
     background-image:url("https://t4.ftcdn.net/jpg/05/97/49/09/360_F_597490918_dugDbSuqx6YSRmCaYiZJ6pCr37cXK3Rv.jpg");
     background-size: cover; 
     background-position: center; 
+    height: 800px;
   }
   .main{
-  height: 1500px; 
+  height: 1700px; 
 
 }.foot
 {
@@ -77,11 +78,10 @@ img{
   flex: 1;
   overflow: hidden;
   margin-top: 100px;
-  /* display: flex;
-  align-items: center; */
 }
 #nav {
-        background-image: url("https://www.caporasoandpartnerslawofficepanama.com/img/articles/legal-aspects-in-home-sales.jpeg");
+        /* background-image: url("https://www.caporasoandpartnerslawofficepanama.com/img/articles/legal-aspects-in-home-sales.jpeg"); */
+        background-image: url("https://i.pinimg.com/564x/7e/f0/b5/7ef0b5956cd6f042ed8e1bb3260c461a.jpg"); 
         background-size: cover; 
         width: 700px;
         background-position: center; 
@@ -111,7 +111,8 @@ img{
 }
 .box {
 text-align: center;
-margin-top: 120px;
+margin-top: 250px;
+font-size: 20px;
 }
 .Nav{
   display: flex;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
+import Logos from "./logo.jpg";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
@@ -97,7 +98,19 @@ const Navbar = () => {
         onClick={toggleDrawer("hamburgerMenu", true)}
         style={{ color: "darkviolet", fontWeight: "bold", fontSize: 20 }}
       >
-        Menu
+        Menu&emsp;&emsp;
+        <img src={Logos} alt="logo" style={{ width: 60, height: 50 }}></img>
+        &emsp;
+        <h2
+          style={{
+            width: 45,
+            height: 45,
+            fontStyle: "italic",
+            color: "rgb(71, 35, 126)",
+          }}
+        >
+          HomeRX
+        </h2>
       </Button>
       <Drawer
         anchor="hamburgerMenu"
@@ -106,7 +119,6 @@ const Navbar = () => {
       >
         {list("hamburgerMenu")}
       </Drawer>
-
       <ul>
         <li>
           <Link to="/" color="black">

@@ -43,6 +43,30 @@ const Main = () => {
             variant="outlined"
             style={{ marginTop: 10, width: 500, borderRadius: 20 }}
           />
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <h2
+            style={{
+              fontSize: 40,
+              fontStyle: "italic",
+              color: "rgb(71, 35, 126)",
+            }}
+          >
+            &emsp;&emsp;High-quality workmanship
+          </h2>
+          <h2
+            style={{
+              fontSize: 40,
+              fontStyle: "italic",
+              color: "rgb(71, 35, 126)",
+            }}
+          >
+            &emsp;&emsp;at great prices.
+          </h2>
         </div>
         <div className="half-page1">
           <div className="p1">
@@ -57,13 +81,22 @@ const Main = () => {
             {/* <img src={Electrician} alt="elect" /> */}
             <img
               style={{ width: 380, height: 300 }}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmSkaHnjoVGdtnkBHjg-uy3GpQuj1MEgv_qlUUkcZP2RXPpzuDVYfqnvT4aj-yy7x8yp8&usqp=CAU"
+              src="https://i.pinimg.com/564x/59/95/c5/5995c50a3b41d113e1705eaf431960bd.jpg"
             ></img>
           </div>
           <br></br>
           <br></br>
           <center>
-            <img src={Clean} alt="clener" className="p2" />
+            <img
+              style={{ width: 420, height: 300 }}
+              src={Clean}
+              alt="clener"
+              className="p2"
+            />
+            {/* <img
+              style={{ width: 420, height: 320 }}
+              src="https://i.pinimg.com/564x/bc/31/17/bc31170bbe6dce1e867ac4bf290eab11.jpg"
+            ></img> */}
           </center>
         </div>
       </div>
@@ -389,9 +422,8 @@ const Main = () => {
           </ul>
           <p>
             <center>
-              Copyright ©2009-2023 ConnectionPoint Systems Inc. (CPSI) ·
-              FundRazr® and the FundRazr® logo are registered trademarks of
-              CPSI.
+              Copyright ©2009-2023 ConnectionPoint Systems Inc. (CPSI) · Enliven
+              All rights reserved.
             </center>
           </p>
         </div>
