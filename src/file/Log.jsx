@@ -14,7 +14,7 @@ const login = () => {
       <div className="half-page white-background">
         <center>
           <div className="box">
-            <p style={{ color: "black", fontSize: 40 }}>Welcome to Enliven</p>
+            <p style={{ color: "black", fontSize: 40 }}>Welcome to HomeRX</p>
             <TextField
               id="standard-textarea"
               label="Username"
@@ -48,7 +48,7 @@ const login = () => {
             <br></br>
             New user? &nbsp;
             <Link to="/Signup" style={{ fontSize: 20 }}>
-              Create Account as Maid{" "}
+              Create Account as Helper{" "}
             </Link>
             &emsp;
             <Link to="/Seeker" style={{ fontSize: 20 }}>

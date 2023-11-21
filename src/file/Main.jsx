@@ -422,7 +422,7 @@ const Main = () => {
           </ul>
           <p>
             <center>
-              Copyright ©2009-2023 ConnectionPoint Systems Inc. (CPSI) · Enliven
+              Copyright ©2009-2023 ConnectionPoint Systems Inc. (CPSI) · HomeRX
               All rights reserved.
             </center>
           </p>
