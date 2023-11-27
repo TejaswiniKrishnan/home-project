@@ -2,31 +2,45 @@ import React from "react";
 import Painter from "./painter1.jpg";
 import Clean from "./clener.jpg";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
+import CardComponent from "./CardComponent";
 import Typography from "@mui/material/Typography";
 import Carp from "./carp.jpg";
+import { Link } from "react-router-dom";
 import Gardener from "./gardener.webp";
+import {
+  Instagram,
+  YouTube,
+  Twitter,
+  LinkedIn,
+  Facebook,
+} from "@mui/icons-material";
 import Paint from "./p123.jpg";
+import SearchableList from "./SearchableList";
+
 import Pipe from "./pipe.webp";
 import Care from "./care.jpeg";
 
-import { TextField } from "@mui/material";
-// function HomeIcon(props) {
-//   return (
-//     <SvgIcon {...props}>
-//       <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-//     </SvgIcon>
-//   );
-// }
-
-const Main = () => {
+import { Icon, TextField } from "@mui/material";
+const Main = ({ contacts }) => {
+  const sampleItems = [
+    "Painter",
+    "ELectrician",
+    "Plumber",
+    "Gardener",
+    "Care Taker",
+    "House cleaning",
+    "Cook",
+    "Driver",
+  ];
   return (
     <div className="main">
       <div className="app-container1">
         <div className="half-page1">
-          <h1 style={{ fontSize: 50 }}>&emsp;&emsp;Home Service Experts</h1>
+          <h1 style={{ fontSize: 50, color: "rgb(71, 35, 126)" }}>
+            &emsp;&emsp;Home Service Experts
+          </h1>
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           <TextField
             id="outlined-search"
@@ -116,11 +130,9 @@ const Main = () => {
             borderRadius: 2,
             backgroundColor: "rgb(210, 218, 248)",
             color: "rgb(63, 35, 119)",
-            // fontWeight: "bold",
           }}
           className="card"
         >
-          {/* <img src={Painter} alt="painter1" className="pics" /> */}
           <CardContent>
             <ul>
               <li style={{ fontSize: 23, fontWeight: "bold", marginTop: 0 }}>
@@ -147,7 +159,6 @@ const Main = () => {
           }}
           className="card"
         >
-          {/* <img src={Painter} alt="painter1" className="pics" /> */}
           <CardContent>
             <ul>
               <li style={{ fontSize: 23, fontWeight: "bold", marginTop: 0 }}>
@@ -193,7 +204,7 @@ const Main = () => {
       <div style={{ backgroundColor: "whitesmoke", height: 8 }}></div>
       <div className="middle">
         <center>
-          <h3 style={{ fontSize: 40 }}>Here's what you can do on Enliven</h3>
+          <h3 style={{ fontSize: 40 }}>Here's what you can do on HomeRX</h3>
         </center>
         <div className="grid1">
           <br></br>
@@ -286,95 +297,25 @@ const Main = () => {
           height: 300,
         }}
       >
-        <Card
-          sx={{ maxWidth: 345, height: 255, borderRadius: 8 }}
-          className="card"
-        >
-          <img src={Painter} alt="painter1" className="pics" />
-          <CardContent>
-            <center>
-              <Typography gutterBottom variant="h5" component="div">
-                Painter
-              </Typography>
-            </center>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
+        <Link to={"/Painting"}>
+          <CardComponent title="Painter" imageSrc={Painter} />
+        </Link>
         &emsp;&emsp;
-        <Card
-          sx={{ maxWidth: 345, height: 255, borderRadius: 8 }}
-          className="card"
-        >
-          <img src={Carp} alt="Carpenter" className="pics" />
-          <CardContent>
-            <center>
-              <Typography gutterBottom variant="h5" component="div">
-                Carpenter
-              </Typography>
-            </center>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
+        <Link to={"/Carpent"}>
+          <CardComponent title="Carpenter" imageSrc={Carp} />
+        </Link>
         &emsp;&emsp;
-        <Card
-          sx={{ maxWidth: 345, height: 255, borderRadius: 8 }}
-          className="card"
-        >
-          <img src={Pipe} alt="Plumber" className="pics" />
-          <CardContent>
-            <center>
-              <Typography gutterBottom variant="h5" component="div">
-                Plumber
-              </Typography>
-            </center>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
+        <Link to={"/Plumb"}>
+          <CardComponent title="Plumber" imageSrc={Pipe} />
+        </Link>
         &emsp;&emsp;
-        <Card
-          sx={{ maxWidth: 345, height: 255, borderRadius: 8 }}
-          className="card"
-        >
-          <img src={Care} alt="Child" className="pics" />
-          <CardContent>
-            <center>
-              <Typography gutterBottom variant="h5" component="div">
-                Care Taker
-              </Typography>
-            </center>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
+        <Link to={"/Caring"}>
+          <CardComponent title="Care Taker" imageSrc={Care} />
+        </Link>
         &emsp;&emsp;
-        <Card
-          sx={{ maxWidth: 345, height: 255, borderRadius: 8 }}
-          className="card"
-        >
-          <img src={Gardener} alt="garden" className="pics" />
-          <CardContent>
-            <center>
-              <Typography gutterBottom variant="h5" component="div">
-                Gardener
-              </Typography>
-            </center>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
+        <Link to={"/Garden"}>
+          <CardComponent title="Gardener" imageSrc={Gardener} />
+        </Link>
       </div>
       <div style={{ backgroundColor: "whitesmoke", height: 8 }}></div>
       <div>
@@ -382,39 +323,39 @@ const Main = () => {
           <center>Follow us!</center>
           <ul className="footone">
             <li>
-              <img
-                className="foot"
-                alt="g"
-                src="https://fundrazr.com/wp-content/uploads/2019/12/fb.jpg"
-              ></img>
+              <Link to="https://www.instagram.com/?hl=en">
+                <Icon>
+                  <Instagram />
+                </Icon>
+              </Link>
             </li>
             <li>
-              <img
-                className="foot"
-                alt="g"
-                src="https://fundrazr.com/wp-content/uploads/2019/12/inst64.png"
-              ></img>
+              <Link to="https://www.facebook.com/">
+                <Icon>
+                  <Facebook />
+                </Icon>
+              </Link>
             </li>
             <li>
-              <img
-                className="foot"
-                alt="g"
-                src="https://fundrazr.com/wp-content/uploads/2019/12/tw.jpg"
-              ></img>
+              <Link to="https://twitter.com/i/flow/login">
+                <Icon>
+                  <Twitter />
+                </Icon>
+              </Link>
             </li>
             <li>
-              <img
-                className="foot"
-                alt="g"
-                src="https://fundrazr.com/wp-content/uploads/2019/12/li.jpg"
-              ></img>
+              <Link to="https://www.linkedin.com/uas/login">
+                <Icon>
+                  <LinkedIn />
+                </Icon>
+              </Link>
             </li>
             <li>
-              <img
-                className="foot"
-                alt="g"
-                src="https://fundrazr.com/wp-content/uploads/2019/12/yt.jpg"
-              ></img>
+              <Link to="https://www.youtube.com/playlist?list=PL0JNv-2mGIY4UwgvWG0L55LfjqkdRPnT3">
+                <Icon>
+                  <YouTube />
+                </Icon>
+              </Link>
             </li>
           </ul>
           <hr />
@@ -423,7 +364,7 @@ const Main = () => {
             <li>Privacy Policy</li>
             <li>Terms of Service</li>
           </ul>
-          <p>
+          <p style={{ color: "darkviolet" }}>
             <center>
               Copyright ©2009-2023 ConnectionPoint Systems Inc. (CPSI) · HomeRX
               All rights reserved.

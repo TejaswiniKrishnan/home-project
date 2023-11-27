@@ -1,7 +1,36 @@
 .app-cont {
     display: flex;
     height: 100vh; 
-    /* background-color: ; */
+}
+.half-pag {
+  flex: 1;
+  overflow: hidden;
+}
+.proper{
+  background-image:url("https://t4.ftcdn.net/jpg/05/97/49/09/360_F_597490918_dugDbSuqx6YSRmCaYiZJ6pCr37cXK3Rv.jpg");
+  background-size: cover; 
+  background-position: center; 
+}
+.artist-list {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+.gh{
+  color: grey;
+  font-size: 20px;
+}
+.ph{
+  color:darkslateblue;
+  font-size: 20px;
+}
+.boxe {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+  }
+.app-conta {
+    display: flex;
+    height: 00; 
 }
 .white-background {
   background-color: white;
@@ -17,6 +46,27 @@
   color: rgb(29, 24, 62);
   background-color: white;
   height: 300px;
+}
+.wholeStyle{
+  display: "flex";
+  justify-content: "space-between";
+  align-items: "center";
+  padding: "50px";
+  background-color: "white";
+}
+.topStyle  {
+  background-color: "rgb(240, 240, 240)";
+  padding: "20px";
+}
+.imageStyle {
+  flex: 1;
+  margin-right: "20px";
+}
+
+.textStyle {
+  color: "rgb(139, 0, 139)";
+  flex: 1;
+  text-align: "left";
 }
 .part{
   height: 50px;
@@ -51,6 +101,8 @@ img{
 }
 .app-container1 {
     display: flex;
+    /* background-image:url("https://tse2.mm.bing.net/th?id=OIP.use5GjsWlC8Z_oGBkscxoQHaEo&pid=Api&P=0&h=180"); */
+    /* background-image:url("https://i.pinimg.com/564x/bf/24/ad/bf24ad8f24d42b06dca61cc23f3f5aed.jpg"); */
     background-image:url("https://t4.ftcdn.net/jpg/05/97/49/09/360_F_597490918_dugDbSuqx6YSRmCaYiZJ6pCr37cXK3Rv.jpg");
     background-size: cover; 
     background-position: center; 
@@ -64,6 +116,19 @@ img{
     width: 30px;
     height:30px;
 }
+.painting{
+  display: flex;
+  height: 1000px;
+  /* background-color: rgb(61, 7, 162); */
+  /* background-color: rgb(162, 173, 223); */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  background-image: url("https://i.pinimg.com/564x/fa/cd/06/facd06bdefb812dafd82a20c04be2c01.jpg");
+  /* background-image: url("https://i.pinimg.com/564x/7d/70/16/7d7016e5b63c3d490b5e72cfebd3351e.jpg"); */
+  /* background-image: url("https://i.pinimg.com/564x/f7/32/eb/f732eb563e8b978328802643d2730fd8.jpg"); */
+  justify-content: space-around;
+}
 .footone
 {
     display:flex;
@@ -73,15 +138,20 @@ img{
 .ft
 {
     justify-content: center;
+    color:darkslateblue
 }
 .half-page1 {
   flex: 1;
   overflow: hidden;
   margin-top: 100px;
 }
+.my{
+  text-decoration: none;
+}
 #nav {
-        /* background-image: url("https://www.caporasoandpartnerslawofficepanama.com/img/articles/legal-aspects-in-home-sales.jpeg"); */
+        /* background-image: url("https://i.pinimg.com/564x/41/21/25/4121258b21002d758831b1ac5878d3eb.jpg"); */
         background-image: url("https://i.pinimg.com/564x/7e/f0/b5/7ef0b5956cd6f042ed8e1bb3260c461a.jpg"); 
+        /* background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-housekeeping-company-creative-propaganda-poster-background-material-image_147054.jpg");  */
         background-size: cover; 
         width: 700px;
         background-position: center; 
@@ -89,9 +159,17 @@ img{
         color:rgb(223, 196, 248); 
         color:blueviolet;
 }  
-/* p{
-  color:rgb(47, 24, 92);
-} */
+.logg{
+  display: flex;
+}
+#help {
+        background-image: url("https://img.freepik.com/free-photo/cosmetics-product-advertising-stand-exhibition-wooden-podium-green-background-with-leaves-sha_1258-170138.jpg?t=st=1700808789~exp=1700812389~hmac=9ebd8709b864b8cca47766ac5d22bf635f9db669618d8c222f42a1327c450da8&w=900"); 
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh; 
+       
+}  
+
 .hi{
   font-size: 30;
 }
@@ -120,7 +198,7 @@ font-size: 20px;
   padding: 1rem 1rem; 
   background-color:white;
   color:rgb(43, 220, 226);
-  color:rgb(233, 236, 240);
+  /* color:rgb(233, 236, 240); */
 }
 #i1{
   background-image:element("painter1.jpg");
@@ -169,9 +247,70 @@ p {
   background-color: cornflowerblue;
   margin: 6px 0;
 }
+.vertical {
+  border-left: 1px solid rgb(254, 253, 253); 
+  height: 100px; 
+}
 .line3{
   width: 10px;
   height: 5px;
   background-color: cornflowerblue;
   margin: 6px 0;
+}
+.helo{
+  background-color: rgb(230, 227, 249);
+  background-color: rgb(128, 118, 198);
+  height: 70px;
+  margin-top: 0px;
+  color: white;
+  padding-top: 0%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff; 
+}
+
+header {
+  background-color: #F5F5F5; 
+  color: #000;
+  text-align: center;
+  padding: 1em;
+  font-weight: bold; 
+}
+
+.about-us {
+  position: relative;
+  overflow: hidden;
+  height: 750px;
+}
+
+.background-image {
+  background-image: url('https://img.freepik.com/premium-photo/adult-children-hands-holding-paper-family-cutout_49149-811.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 750px; 
+  opacity: 0.7; 
+  position: absolute;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  border-radius: 8px; 
+  color:rgb(66, 13, 119); 
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  /* color: #9400D3;  */
+}
+
+footer {
+  background-color: #f5f5f5; 
+  color: #000; 
+  text-align: center;
+ padding:1em;
 }

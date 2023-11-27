@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -11,52 +11,38 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-
-const defaultTheme = createTheme();
+import PhotoUpload from "./PhotoUpload";
 
 export default function SignUp() {
+  const [selectedFiles, setSelectedFiles] = useState([]);
+
+  const handlePhotoUpload = (files) => {
+    // Handle the uploaded files
+    setSelectedFiles(files);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      Email: data.get("Email"),
-      PhoneNumber: data.get("Phone Number"),
-      Age: data.get("Age"),
-      Educationdetails: data.get("Education details"),
-      Expertisein: data.get("Expertise in"),
-      Experience: data.get("Experience"),
-      State: data.get("State"),
-      City: data.get("City"),
-      Pincode: data.get("Pincode"),
+      firstName: data.get("firstName"),
+      lastName: data.get("lastName"),
+      email: data.get("Email"),
+      phoneNumber: data.get("Phone Number"),
+      age: data.get("Age"),
+      educationDetails: data.get("Education details"),
+      expertiseIn: data.get("Expertise in"),
+      experience: data.get("Experience"),
+      state: data.get("State"),
+      city: data.get("City"),
+      pincode: data.get("Pincode"),
+      selectedFiles,
     });
   };
 
   return (
-    <div style={{ backgroundColor: "white" }}>
-      <Container
-        component="main"
-        maxWidth="xs"
-        style={{ backgroundColor: "white" }}
-      >
+    <div style={{ backgroundColor: "white" }} className="proper">
+      <Container component="main" maxWidth="xs" style={{ marginTop: 0 }}>
         <CssBaseline />
         <Box
           sx={{
@@ -64,7 +50,7 @@ export default function SignUp() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            backgroundColor: "white",
+            // backgroundColor: "white",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
@@ -190,6 +176,11 @@ export default function SignUp() {
                   label="Pincode"
                   autoComplete="Pincode"
                 />
+                <br></br>
+                <br></br>
+                <Button variant="contained">
+                  <PhotoUpload className="photo" onUpload={handlePhotoUpload} />
+                </Button>
               </Grid>
 
               <Grid item xs={12}>
@@ -226,7 +217,10 @@ export default function SignUp() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 5 }} />
+        {/* <Copyright sx={{ mt: 5 }} /> */}
+        <center>
+          <p>Copyright © Your Website 2023.</p>
+        </center>
       </Container>
     </div>
   );
